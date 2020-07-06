@@ -91,6 +91,11 @@ public class Salarie {
 		return m_nCount;
 	}
 	
+	public String toString() {
+		
+		return m_nMatricule + "," + m_nCategorie + ", " + m_nService + "," + m_strNom + ", " + m_dSalaire + ".";
+	}
+	
 	//Cette fonction calculSalaire retourne une chaine de caractères
 	public String calculSalaire() {
 		

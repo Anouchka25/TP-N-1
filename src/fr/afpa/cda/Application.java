@@ -10,6 +10,9 @@ public class Application {
 		Salarie sal2 = new Salarie(2, 5, 9, "Anne LECLERC", 2000 );
 		System.out.println("Le nombre de salarié créé est : "+ Salarie.getCount());
 		
+		Commercial sal4 = new Commercial(2, 5, 9, "Laurent DUMARC", 2000, 25000, 10 );
+		System.out.println("Le nombre de salarié créé est : "+ Salarie.getCount());
+		
 		// j'affecte des valeurs aux attributs de notre objet sal
 		//sal.setMatricule(2);
 		//sal.setCategorie(9);
@@ -23,9 +26,20 @@ public class Application {
 		//System.out.println(sal.getService());
 		//System.out.println(sal.getNom());
 		
+		//Utilisation de la méthode equals
+		Salarie sal3 = sal2;
+		
+		if(sal2.equals(sal3)) {
+			
+			System.out.println("Ils sont identiques");
+		}
+		
+		
 		System.out.println(sal1.calculSalaire());
 		
 		System.out.println(sal2.calculSalaire());
+		
+		System.out.println(sal4.calculSalaire());
 
 	}
 
