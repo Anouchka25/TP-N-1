@@ -7,6 +7,31 @@ public class Salarie {
 	private int m_nCategorie;
 	private int m_nService;
 	private String m_strNom;
+	private static int m_nCount = 0; //compteur
+	
+	public Salarie(int matricule, int categorie, int service, String nom, double salaire) {
+		super();
+		System.out.println("Je suis le constructeur et je créé le salarié : " +m_strNom );
+		this.m_nMatricule = matricule;
+		this.m_nCategorie = categorie;
+		this.m_nService = service;
+		this.m_strNom = nom;
+		this.m_dSalaire = salaire;
+		this.m_nCount = m_nCount + 1;
+	}
+	
+	//ici c'est le constructeur par défaut
+	public Salarie() {
+		System.out.println("Je suis le constructeur par défaut et je créé : " );
+		this.m_nMatricule = 1;
+		this.m_nCategorie = 9;
+		this.m_nService = 15;
+		this.m_strNom = "Luc DUMONT";
+		this.m_dSalaire = 3000;
+		this.m_nCount = m_nCount + 1;
+	}
+
+
 	public int getM_nMatricule() {
 		return m_nMatricule;
 	}
@@ -62,6 +87,9 @@ public class Salarie {
 
 	private double m_dSalaire;
 	
+	public static int getCount(){
+		return m_nCount;
+	}
 	
 	//Cette fonction calculSalaire retourne une chaine de caractères
 	public String calculSalaire() {
