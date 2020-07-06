@@ -7,17 +7,17 @@ public class Application {
 		Salarie sal = new Salarie();
 		
 		// j'affecte des valeurs aux attributs de notre objet sal
-		sal.m_nMatricule = 1;
-		sal.m_nCategorie = 2;
-		sal.m_nService = 6;
-		sal.m_strNom = "Anouchka MINKOUE OBAME";
-		sal.m_dSalaire = 2000;
+		sal.setMatricule(2);
+		sal.setCategorie(9);
+		sal.setService(12);
+		sal.setNom("Anouchka MINKOUE OBAME");
+		sal.setSalaire(50000);
 		
 		//Afficher le sal
-		//System.out.println(sal.m_nMatricule);
-		//System.out.println(sal.m_nCategorie);
-		//System.out.println(sal.m_nService);
-		//System.out.println(sal.m_strNom);
+		//System.out.println(sal.getMatricule());
+		//System.out.println(sal.getCategorie());
+		//System.out.println(sal.getService());
+		//System.out.println(sal.getNom());
 		
 		System.out.println(sal.calculSalaire());
 
